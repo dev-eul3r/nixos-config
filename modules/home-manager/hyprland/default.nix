@@ -37,7 +37,6 @@
         "$mod, X, exec, hyprlock"
 
         # Browser
-        "$mod, W, exec, firefox"
         "$mod, B, exec, google-chrome-stable"
 
         # Focus movement
@@ -145,8 +144,8 @@
       };
 
       exec-once = [
-	"systemctl --user restart waybar && nm-applet --indicator" # start waybar
-	"swww-daemon && swww img ~/Pictures/sails.jpeg"
+	    "systemctl --user restart waybar && nm-applet --indicator" # start waybar
+	    "swww-daemon && swww img ~/Pictures/sails.jpeg"
       ];
     };
   };

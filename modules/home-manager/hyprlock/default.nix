@@ -5,7 +5,7 @@
   # Enable Hyprlock
   programs.hyprlock = {
     enable = true;
-    
+
     # All configuration should be under settings
     settings = {
       # General settings
@@ -15,12 +15,12 @@
         grace = 0; # No grace period - immediately ask for password
         no_fade_in = false;
       };
-      
+
       # Background settings - keeping your existing wallpaper
       background = [
         {
           monitor = "";
-          path = "~/Pictures/sails.jpeg"; # Keeping your existing wallpaper
+          path = "~/Pictures/sails.jpeg";
           color = "rgba(25, 20, 20, 1.0)";
           blur_size = 4;
           blur_passes = 3;
@@ -28,7 +28,7 @@
           brightness = 0.8;
         }
       ];
-      
+
       # Clock/time widget - moved up in the configuration to appear before input field
       label = [
         # Large clock display
@@ -38,7 +38,7 @@
           color = "rgba(242, 243, 244, 0.75)";
           font_size = 95;
           font_family = "Hack Nerd Font";
-          position = "0, 300"; # Position clock higher on screen
+          position = "0, 300";
           halign = "center";
           valign = "center";
         }
@@ -49,26 +49,26 @@
           color = "rgba(242, 243, 244, 0.75)";
           font_size = 22;
           font_family = "Hack Nerd Font";
-          position = "0, 200"; # Position date under the clock
+          position = "0, 200";
           halign = "center";
           valign = "center";
         }
       ];
-      
+
       # Input field configuration - moved below time/date
       "input-field" = [
         {
           monitor = "";
           size = "200, 50";
           outline_thickness = 2;
-          dots_size = 0.2; 
+          dots_size = 0.2;
           dots_spacing = 0.35;
           dots_center = true;
           outer_color = "rgba(0, 0, 0, 0)"; # Transparent outer color
           inner_color = "rgba(0, 0, 0, 0.2)"; # Subtle inner color
           font_color = "rgb(242, 243, 244)";
           fade_on_empty = false;
-          rounding = -1; # Match example's design
+          rounding = -1;
           placeholder_text = "";
           hide_input = false;
           position = "0, -100"; # Position input field below date/time
