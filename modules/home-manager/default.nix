@@ -26,6 +26,8 @@
     nerd-fonts.hack
     eza
     fzf
+    qbittorrent
+    vlc
   ];
 
   # Environment variables
